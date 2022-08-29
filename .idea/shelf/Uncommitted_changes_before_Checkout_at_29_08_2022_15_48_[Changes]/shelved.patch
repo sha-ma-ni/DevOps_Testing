@@ -1,0 +1,22 @@
+Index: README_TEST.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>All tests can be found in the folder \"test\".\n\nTest N1\nPurpose: server listening\nPrerequisite:\nTest Data:
+===================================================================
+diff --git a/README_TEST.md b/README_TEST.md
+--- a/README_TEST.md	
++++ b/README_TEST.md	
+@@ -1,6 +1,9 @@
+ All tests can be found in the folder "test".
+ 
+ Test N1
++test.test_server.js
+ Purpose: server listening
+-Prerequisite:
+-Test Data:
+\ No newline at end of file
++Precondition: port should be free
++Test Data: to start in terminal: npm test
++Expected Results: server listening on port 8080
++Result: pass or fail.
+\ No newline at end of file
