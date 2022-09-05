@@ -3,7 +3,6 @@ service: default
 handlers:
   # Serve all static files with urls ending with a file extension
   - url: /(.*\..+)$
-    script: auto
     static_files: public/\1
     upload: public/(.*\..+)$
     # catch all handler to index.html
