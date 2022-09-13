@@ -10,7 +10,7 @@ const Todo = require('./../app/models/todo')
 
 describe('todos', () => {
     before("remove all todos", function (done) {
-        Todo.remove({}, function (err, todo) {
+        Todo.deleteOne ({}, function (err, todo) {
             done();
         });
     });
