@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9fae69de-bb5f-478e-9bfb-6e482fb674f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220905_0007" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220913_0001" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -54,6 +55,7 @@
       <workItem from="1659364392189" duration="9000" />
       <workItem from="1660250304252" duration="836000" />
       <workItem from="1662374341689" duration="3897000" />
+      <workItem from="1663056709826" duration="1468000" />
     </task>
     <servers />
   </component>
