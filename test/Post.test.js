@@ -6,15 +6,7 @@ const app = require('./../server')
 const Todo = require('./../app/models/todo')
 
 
-//The before block cleans your Todo database
-
 describe('todos', () => {
-    before("remove all todos", function (done) {
-        Todo.deleteMany({}, function (err, todo) {
-            done();
-        });
-    });
-
     describe('POST /todos', () => { // 1
         it('should create a new todo', (done) => {
             const text = 'Test todo text'; // 2
@@ -26,7 +18,7 @@ describe('todos', () => {
                 if (err) {
                     return done(err)
                 }
-                assert.equal(res.body[0].text, text);
+                assert.equal(res.body[res.body.length - 1].text, text);
                 return done();
             })
         })

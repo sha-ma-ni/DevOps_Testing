@@ -8,12 +8,5 @@ describe('server listening', () => {
         const server = require('../server.js');
         const isOpen = await waitPort({port: PORT});
         expect(isOpen).to.be.true;
-        // await timeOut();
-        //
-        // function timeOut(ms) {
-        //     return new Promise(
-        //         resolve => setTimeout(resolve, 1000)
-        //     )
-        // }
     });
 });
