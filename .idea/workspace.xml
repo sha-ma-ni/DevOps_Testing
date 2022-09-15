@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fae69de-bb5f-478e-9bfb-6e482fb674f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloudbuild.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudbuild.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
