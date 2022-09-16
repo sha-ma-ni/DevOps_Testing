@@ -6,9 +6,10 @@
   "author": "Scotch",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "dependencies": {
+    "@types/node": "^16.11.7",
     "assert": "^2.0.0",
     "body-parser": "^1.18.2",
     "chai": "^4.3.6",
@@ -16,7 +17,6 @@
     "express": "^4.18.1",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
-    "node": "^18.9.0",
     "request": "^2.88.2",
     "supertest": "^6.2.4",
     "unit.js": "^2.1.1",
@@ -26,5 +26,8 @@
     "@types/mongoose": "^5.11.97",
     "mocha": "^10.0.0",
     "mongoose": "^6.6.0"
+  },
+  "engines": {
+    "node": "= 16.x"
   }
 }

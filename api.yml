@@ -2,4 +2,5 @@ runtime: nodejs16
 service: api
 
 vpc_access_connector:
-  name: projects/b-testing-356618/locations/europe-west6/connectors/atlas
+  name: "projects/b-testing-356618/locations/europe-west6/connectors/atlas"
+  egress_setting: all-traffic
