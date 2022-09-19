@@ -9,10 +9,9 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
   id: TEST
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+- name: 'gcr.io/cloud-builders/gcloud'
   args:
-  - gcloud
-  - functions
+  - gcloud functions
   - deploy
   - $_FUNCTION_NAME
   - --region=$_FUNCTION_REGION
