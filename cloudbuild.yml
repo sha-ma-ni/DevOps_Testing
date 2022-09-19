@@ -9,7 +9,7 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
   id: TEST
-- name: 'gcr.io/cloud-builders/cloud-sdk'
+- name: 'gcr.io/cloud-builders/cloud-functions'
   args:
   - gcloud
   - functions
