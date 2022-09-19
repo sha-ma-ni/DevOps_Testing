@@ -11,8 +11,7 @@ steps:
   id: TEST
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
-  - gcloud functions
-  - deploy
+  - gcloud functions deploy
   - $_FUNCTION_NAME
   - --region=$_FUNCTION_REGION
   - --source=.
