@@ -10,15 +10,8 @@ steps:
   args: ['test']
   id: TEST
 - name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - gcloud functions deploy
-  - $_FUNCTION_NAME
-  - --region=$_FUNCTION_REGION
-  - --source=.
-  - --trigger-http
-  - --runtime=$_FUNCTION_RUNTIME
-  - --project=$_FUNCTION_PROJECT
-  - --entry-point=$_ENTRY_POINT
+  args: [ 'gcloud', 'functions', 'deploy', '$_FUNCTION_NAME', '--region=$_FUNCTION_REGION', '--source=.','--trigger-http',
+      '--runtime=$_FUNCTION_RUNTIME', '--project=$_FUNCTION_PROJECT', '--entry-point=$_ENTRY_POINT']
   id: DEPLOY
 substitutions:
   _FUNCTION_PROJECT: B-Testing
