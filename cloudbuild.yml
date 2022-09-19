@@ -15,7 +15,7 @@ steps:
   id: DEPLOY
 substitutions:
   _FUNCTION_PROJECT: b-testing-356618
-  _FUNCTION_NAME: functions-dev
+  _FUNCTION_NAME: functions-devops
   _FUNCTION_REGION: europe-west6
   _FUNCTION_RUNTIME: nodejs16
   _ENTRY_POINT: app
