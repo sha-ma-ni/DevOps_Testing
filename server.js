@@ -27,3 +27,7 @@ app.listen(port);
 console.log("App listening on port " + port);
 
 module.exports = app; //for testing
+
+exports.myfunction = (req, res) => {
+    res.send(`<h1>You're awesome 🤘</h1>`);
+};
