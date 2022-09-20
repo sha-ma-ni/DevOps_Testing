@@ -1,4 +1,8 @@
 dispatch:
+  - url: "*/"
+    service: default
+  - url: "*/js/*"
+    service: default
   # Send all trafic on /api to api service.
-  - url: '*/api'
+  - url: "*/api/*"
     service: api

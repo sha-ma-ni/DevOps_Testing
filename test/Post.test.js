@@ -1,26 +1,26 @@
-const expect = require('expect')
-const request = require('supertest')
-const {ObjectId} = require('mongodb')
-const assert = require('assert')
-const app = require('./../server')
-const Todo = require('./../app/models/todo')
-
-
-describe('todos', () => {
-    describe('POST /todos', () => { // 1
-        it('should create a new todo', (done) => {
-            const text = 'Test todo text'; // 2
-
-            request(app) // 3
-                .post('/api/todos')
-                .send({text})
-                .expect(200).end(function (err, res) {
-                if (err) {
-                    return done(err)
-                }
-                assert.equal(res.body[res.body.length - 1].text, text);
-                return done();
-            })
-        })
-    })
-});
+// const expect = require('expect')
+// const request = require('supertest')
+// const {ObjectId} = require('mongodb')
+// const assert = require('assert')
+// const app = require('./../server')
+// const Todo = require('./../app/models/todo')
+//
+//
+// describe('todos', () => {
+//     describe('POST /todos', () => { // 1
+//         it('should create a new todo', (done) => {
+//             const text = 'Test todo text'; // 2
+//
+//             request(app) // 3
+//                 .post('/api/todos')
+//                 .send({text})
+//                 .expect(200).end(function (err, res) {
+//                 if (err) {
+//                     return done(err)
+//                 }
+//                 assert.equal(res.body[res.body.length - 1].text, text);
+//                 return done();
+//             })
+//         })
+//     })
+// });
