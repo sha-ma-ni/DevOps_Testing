@@ -5,7 +5,7 @@ const assert = require('assert')
 const app = require('./../server')
 const Todo = require('./../app/models/todo')
 
-
+// post test
 describe('todos', () => {
     describe('POST /todos', () => { // 1
         it('should create a new todo', (done) => {
