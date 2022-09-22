@@ -1,19 +1,19 @@
 name: Deploy to Google App Engine
 on:
-    push:
-        branches:
-            - development
+  push:
+    branches:
+      - development
 jobs:
-    build:
-        name: GAE Deploy
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout Repo
-          uses: actions/checkout@v3
-        - name: Deploy
-          uses: google-github-actions/deploy-appengine@v0.4.0
-         with:
-            project_id: b-testing-356618
-            version: development
-            credentials: ${{ secrets.gcp_credentials }}
-            deliverables: app.yml, api.yml, dispatch.yml
+  build:
+    name: GAE Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Deploy
+        uses: google-github-actions/deploy-appengine@v0.4.0
+      with:
+
+        version: development
+        credentials: ${{ secrets.gcp_credentials }}
+        deliverables: app.yml, api.yml, dispatch.yml
