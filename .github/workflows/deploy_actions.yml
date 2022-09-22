@@ -21,4 +21,6 @@ jobs:
           credentials: ${{ secrets.gcp_credentials }}
           deliverables: app.yml api.yml dispatch.yml
 
+      - name: Test
+        run: curl "${{ steps.deploy.outputs.url }}"
 
