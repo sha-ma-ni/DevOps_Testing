@@ -22,5 +22,5 @@ jobs:
           deliverables: app.yml api.yml dispatch.yml
 
       - name: Test
-        run: curl "${{ steps.deploy.outputs.url }}"
+      - run: npm test
 
