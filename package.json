@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "deploy": "gcloud app deploy",
-    "test": "mocha --exit"
+    "test": "mocha --exit --timeout 10000"
   },
   "dependencies": {
     "@actions/core": "^1.9.1",
