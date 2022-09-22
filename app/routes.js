@@ -55,12 +55,12 @@ module.exports = function (app) {
     //     res.sendFile(__dirname + '/public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
     // });
     //ERROR-MESSAGE
-    /* app.delete('/api/todos/:todo_id', function(req, res) {
+    app.delete('/api/todos/:todo_id', function(req, res) {
         const todo = req.params.todo;
         if(!todo == todo_id) {
             console.log('todo_id not found');
             return res.status(404).send({message: 'todo does not exist'});
         }
-    }) */
+    })
 
 };

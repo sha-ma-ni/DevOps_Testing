@@ -1,4 +1,4 @@
-/* const request = require('supertest')
+const request = require('supertest')
 const {ObjectId} = require('mongodb')
 const app = require('./../server')
 
@@ -10,4 +10,4 @@ describe('ERROR 404 testing', () => {
         .expect(404)
         .end(done)
     })
-}); */
+});
