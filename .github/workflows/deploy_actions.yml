@@ -22,5 +22,8 @@ jobs:
           deliverables: app.yml api.yml dispatch.yml
 
       - name: Test
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
       - run: npm test
 
