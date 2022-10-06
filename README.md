@@ -1,4 +1,7 @@
-Link to the original repository https://github.com/scotch-io/node-todo
+In DevOps_Testing project we took an existing App from GitHub (https://github.com/scotch-io/node-todo) and deployed it to the Google Cloud Platform.
+We used MongoDB for creating the database. You also need to set up your database (We created a free cluster and set up a serverless vpc connection)
+For the deployment we decided to use Google App Engine. We split the application into two services - default (frontend) and api (backend).
+We wrote configuration files using YAML syntax.
 
 # Node Todo App
 
